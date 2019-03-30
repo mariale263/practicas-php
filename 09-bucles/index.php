@@ -26,12 +26,27 @@ if (isset ($_GET['numero'])) {
     $numero = 1;
 }
  
-echo "<h1>tabla de multiplicar de $numero</h1>";
+echo "<h1>Tabla de multiplicar de $numero</h1>";
 
 $contador = 0;
 
 while ($contador <= 10) {
     echo "$numero x $contador = ".($numero*$contador)."<br>";
-    $contador;
+    $contador++;
 
 }
+
+echo "<hr/>";
+
+//DO WHILE
+
+$a = 1;
+$b = 0;
+
+echo "<h1>Tabla de multiplicar de $b</h1>";
+
+do {
+    echo "$a x $b = ".($a*$b)."<br>";
+    $b++;
+    
+} while ($b <= 10);
